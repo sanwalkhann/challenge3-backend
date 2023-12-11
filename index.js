@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 
 app.get('/api/random', (req, res) => {
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  const randomNumber = Math.floor(Math.random() * 200) - 100;
   res.json({ random_number: randomNumber });
 });
 
